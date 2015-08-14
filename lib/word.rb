@@ -3,7 +3,6 @@ class Word
 
   define_method(:initialize) do |word_entry|
     @word_entry = word_entry
-    @id = @@word_entries.length().+(1)
     @definitions = []
   end
 
@@ -11,9 +10,9 @@ class Word
     @word_entry
   end
 
-  define_method(:id) do
-    @id
-  end
+  # define_method(:id) do
+  #   @id
+  # end
 
   define_method(:definitions) do
     @definitions

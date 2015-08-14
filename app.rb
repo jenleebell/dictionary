@@ -14,3 +14,13 @@ end
 #   new_word_entry = Word.new(word_entry)
 #   new_word.save()
 #   @details =
+
+
+post ('/new_word') do
+  word_input = params.fetch('word_input')
+  # definition_input = params.fetch('definition_input')
+  new_word = Word.new(word_input)
+  new_word.save()
+  @word_entries = Word.all
+  erb(:index)
+end

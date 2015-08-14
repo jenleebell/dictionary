@@ -11,11 +11,11 @@ describe(Definition) do
     end
   end
 
-  describe('.all') do
-    it('initially is empty') do
-      expect(Definition.all()).to(eq([]))
-    end
-  end
+  # describe('.all') do
+  #   it('initially is empty') do
+  #     expect(Definition.all()).to(eq([]))
+  #   end
+  # end
 
   describe('save') do
     it('adds a definition entry to the array of saved definition entries') do
