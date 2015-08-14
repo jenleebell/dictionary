@@ -2,7 +2,7 @@
 <form action="/new_word" method="post">
   <div class="form-group">
     <label for "word_input">Enter in a word you want to add to the dictionary</label>
-    <input id="word_input" name="word_input" class="form control" type="text" placeholder="i.e. Cat">
+    <input id="word_input" name="word_input" class="form control" type="text" placeholder="i.e. Dog">
 <br>
     <label for="definition_input">Enter in the definition</label>
     <input id="definition_input" name="definition_input" class="form control" type="text" placeholder="i.e. a cute and cuddly animal">
@@ -14,7 +14,7 @@
 <br>
 <ul>
   <% @word_entries.each() do |word_entry| %>
-  <li><%= @word_entry %></li>
+  <li><%= word_entry.word_entry() %></li>
   <!-- <li><%= word_entry.definitions() %></li> -->
   <% end %>
 </ul>

@@ -22,5 +22,5 @@ post ('/new_word') do
   new_word = Word.new(word_input)
   new_word.save()
   @word_entries = Word.all
-  erb(:index)
+  erb(:success)
 end

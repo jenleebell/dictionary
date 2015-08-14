@@ -3,6 +3,9 @@ require('word')
 require('definition')
 
 describe(Word) do
+  before() do
+    Word.clear()
+  end
 
   describe('#word_entry') do
     it('returns submitted word') do
