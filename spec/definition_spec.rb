@@ -17,4 +17,13 @@ describe(Definition) do
     end
   end
 
+  describe('save') do
+    it('adds a definition entry to the array of saved definition entries') do
+      test_definition_entry = Definition.new('cute and cuddly feline')
+      test_definition_entry.save()
+      expect(Definition.all()).to(eq([test_definition_entry]))
+    end
+  end
+
+
 end

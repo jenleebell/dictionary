@@ -13,5 +13,8 @@ class Definition
     @@definition_entries
   end
 
+  define_method(:save) do
+    @@definition_entries.push(self)
+  end
 
 end
