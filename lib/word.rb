@@ -13,4 +13,9 @@ class Word
   define_method(:id) do
     @id
   end
+
+  define_singleton_method(:all) do
+    @@word_entries
+  end
+
 end

@@ -16,4 +16,12 @@ describe(Word) do
       expect(test_word_entry.id()).to(eq(1))
     end
   end
+
+  describe('.all') do
+    it('initially is empty') do
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
+
 end
