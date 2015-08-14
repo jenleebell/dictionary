@@ -1,10 +1,10 @@
 class Word
 
-  define_method(:initialize) do |submitted_word|
-    @submitted_word = submitted_word
+  define_method(:initialize) do |word_entry|
+    @word_entry = word_entry
   end
 
-  define_method(:submitted_word) do
-    @submitted_word
+  define_method(:word_entry) do
+    @word_entry
   end
 end
