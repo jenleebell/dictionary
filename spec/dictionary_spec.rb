@@ -10,9 +10,10 @@ describe(Word) do
     end
   end
 
-  # describe('#id') do
-  #   it('returns the id of the submitted word') do
-  #     test_word_entry
-  #   end
-  # end
+  describe('#id') do
+    it('returns the id of the submitted word') do
+      test_word_entry = Word.new('cat')
+      expect(test_word_entry.id()).to(eq(1))
+    end
+  end
 end
