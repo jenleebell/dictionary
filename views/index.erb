@@ -1,0 +1,16 @@
+<h1>The Dictionary</h1>
+<form action="/word" method="post">
+  <div class="form-group">
+    <label for "word">Enter in a word you want to add to the dictionary</label>
+    <input id="word_input" name="word_input" class="form control" type="text" placeholder="i.e. Cat">
+  </div>
+  <br>
+  <button type="submit" class="btn-success">Save Task</button>
+</form>
+<br>
+<br>
+<ul>
+  <% @word_entry.each() do |word_entry| %>
+  <!-- <li><%= word_entry.definitions() %></li> -->
+  <% end %>
+</ul>
