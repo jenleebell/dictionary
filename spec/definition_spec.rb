@@ -7,10 +7,10 @@ describe(Definition) do
   Definition.clear()
 end
 
-  describe('definition_entry') do
+  describe('description') do
     it('returns submitted definition') do
       test_definition_entry = Definition.new('cute and cuddly feline')
-      expect(test_definition_entry.definition_entry()).to(eq('cute and cuddly feline'))
+      expect(test_definition_entry.description()).to(eq('cute and cuddly feline'))
     end
   end
 

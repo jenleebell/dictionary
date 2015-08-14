@@ -7,10 +7,10 @@ describe(Word) do
     Word.clear()
   end
 
-  describe('#word_entry') do
+  describe('#name') do
     it('returns submitted word') do
       test_word_entry = Word.new('cat')
-      expect(test_word_entry.word_entry()).to(eq('cat'))
+      expect(test_word_entry.name()).to(eq('cat'))
     end
   end
 

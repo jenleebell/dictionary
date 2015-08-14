@@ -17,7 +17,7 @@ end
 
 get("/details/:id") do
   @word_entry = Word.find(params.fetch('id').to_i())
-  erb(:word)
+  erb(:details)
 end
 
 post ('/new_word') do

@@ -1,14 +1,14 @@
 class Word
   @@word_entries = []
 
-  define_method(:initialize) do |word_entry|
-    @word_entry = word_entry
+  define_method(:initialize) do |name|
+    @name = name
     @id = @@word_entries.length().+(1)
     @definitions = []
   end
 
-  define_method(:word_entry) do
-    @word_entry
+  define_method(:name) do
+    @name
   end
 
   define_method(:id) do
