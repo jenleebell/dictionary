@@ -1,5 +1,6 @@
 require('rspec')
 require('word')
+require('definition')
 
 describe(Word) do
 
@@ -38,6 +39,5 @@ describe(Word) do
       expect(Word.all()).to(eq([]))
     end
   end
-
 
 end
