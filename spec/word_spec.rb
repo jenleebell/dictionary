@@ -40,4 +40,13 @@ describe(Word) do
     end
   end
 
+  describe('#add_definition') do
+    it('adds a new definition to a submitted word') do
+      test_word_entry = Word.new("cat")
+      test_definition_entry = Definition.new("cute and cuddly feline")
+      test_word_entry.add_definition(test_definition_entry)
+      expect(test_word_entry.definitions()).to(eq([test_definition_entry]))
+    end
+  end
+
 end
