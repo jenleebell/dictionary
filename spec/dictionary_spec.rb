@@ -31,13 +31,13 @@ describe(Word) do
     end
   end
 
-  # describe('.clear') do
-  #   it('empties out all of the saved word entries') do
-  #     Word.new('cat').save()
-  #     Word.clear()
-  #     expect(Word.all()).to(eq([]))
-  #   end
-  # end
+  describe('.clear') do
+    it('empties out all of the saved word entries') do
+      Word.new('cat').save()
+      Word.clear()
+      expect(Word.all()).to(eq([]))
+    end
+  end
 
 
 end
