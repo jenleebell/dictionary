@@ -12,7 +12,7 @@ This app was built using Ruby.
 
 ## Setup
 
-1. Go to:
+1. Go to: https://morning-dawn-2815.herokuapp.com/
 2. Enjoy!
 
 ##### Legal
