@@ -3,6 +3,9 @@ require('word')
 require('definition')
 
 describe(Definition) do
+  before() do
+  Definition.clear()
+end
 
   describe('definition_entry') do
     it('returns submitted definition') do
