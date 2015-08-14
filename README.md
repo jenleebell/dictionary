@@ -7,6 +7,9 @@
 ##### Description
 This application allows a user to submit a word with definitions as their own personal dictionary
 
+##### Technologies Used
+This app was built using Ruby.
+
 ## Setup
 
 1. Go to:
