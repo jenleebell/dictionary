@@ -23,5 +23,21 @@ describe(Word) do
     end
   end
 
+  describe('save') do
+    it('adds a word entry to the array of saved word entries') do
+      test_word_entry = Word.new('cat')
+      test_word_entry.save()
+      expect(Word.all()).to(eq([test_word_entry]))
+    end
+  end
+
+  # describe('.clear') do
+  #   it('empties out all of the saved word entries') do
+  #     Word.new('cat').save()
+  #     Word.clear()
+  #     expect(Word.all()).to(eq([]))
+  #   end
+  # end
+
 
 end

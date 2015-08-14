@@ -18,4 +18,12 @@ class Word
     @@word_entries
   end
 
+  define_method(:save) do
+    @@word_entries.push(self)
+  end
+
+  # define_singleton_method(:clear) do
+  #   @@word_entries = []
+  # end
+
 end
