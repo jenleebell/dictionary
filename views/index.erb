@@ -14,7 +14,7 @@
 <br>
 <ul>
   <% @word_entries.each() do |word_entry| %>
-  <li><%= word_entry.word_entry() %></li>
+  <li><a href="/details/<%= word_entry.id() %>"><%= word_entry.word_entry() %></a></li>
   <!-- <li><%= word_entry.definitions() %></li> -->
   <% end %>
 </ul>

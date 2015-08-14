@@ -15,6 +15,10 @@ end
 #   new_word.save()
 #   @details =
 
+get("/details/:id") do
+  @word_entry = Word.find(params.fetch('id').to_i())
+  erb(:word)
+end
 
 post ('/new_word') do
   word_input = params.fetch('word_input')

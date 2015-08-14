@@ -1,2 +1,8 @@
-<%= @result %>
-<p><a href="/" >Back</a></p>
+<h2><%= @word_entry.word_entry() %></h2>
+<li>
+  <% @word_entry.definitions_entries.each() do |definition| %>
+  <li><%= definition_entry.definition_entry() %></li>
+  <% end %>
+
+
+<p><a href="/" >Return to The Dictionary</a></p>
