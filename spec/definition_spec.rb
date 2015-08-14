@@ -25,5 +25,13 @@ describe(Definition) do
     end
   end
 
+  describe('.clear') do
+    it('empties out all of the saved definitions') do
+      Definition.new('cute and cuddly feline').save()
+      Definition.clear()
+      expect(Definition.all()).to(eq([]))
+    end
+  end
+
 
 end
