@@ -9,4 +9,9 @@ class Definition
     @definition_entry
   end
 
+  define_singleton_method(:all) do
+    @@definition_entries
+  end
+
+
 end

@@ -11,4 +11,10 @@ describe(Definition) do
     end
   end
 
+  describe('.all') do
+    it('initially is empty') do
+      expect(Definition.all()).to(eq([]))
+    end
+  end
+
 end
