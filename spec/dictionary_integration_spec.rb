@@ -9,6 +9,6 @@ describe('the definition path', {:type => :feature}) do
   fill_in('word_input', :with => 'cat')
   # fill_in('definition_input', :with => 'Cute and cuddly feline')
   click_button('Add Word')
-  expect(page).to have_content('Word has been submitted.')
+  expect(page).to have_content('Your word and/or definition has been submitted.')
   end
 end
