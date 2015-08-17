@@ -14,11 +14,11 @@ describe(Word) do
     end
   end
 
-  # describe('.all') do
-  #   it('initially is empty') do
-  #     expect(Word.all()).to(eq([]))
-  #   end
-  # end
+  describe('.all') do
+    it('initially is empty') do
+      expect(Word.all()).to(eq([]))
+    end
+  end
 
   describe('save') do
     it('adds a word entry to the array of saved word entries') do
